@@ -43,8 +43,8 @@ namespace LAB_3_Saveliy
                 цена = value;
             }
         }
-        private double срок;
-        public double Срок
+        private DateTime срок;
+        public DateTime Срок
         {
             get
             {

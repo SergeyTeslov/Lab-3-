@@ -27,8 +27,8 @@ namespace LAB_3_Saveliy
             string p1 = pr1.Произв;
             pr1.Цена = 400;
             double z1 = pr1.Цена;
-            pr1.Срок = 15.11;
-            double s1 = pr1.Срок;
+            pr1.Срок = new DateTime(2022,04,13);
+            DateTime s1 = pr1.Срок;
             pr1.Кол = 250;
             int k1 = pr1.Кол;
 
@@ -40,8 +40,8 @@ namespace LAB_3_Saveliy
             string p2 = pr2.Произв;
             pr2.Цена = 150;
             double z2 = pr2.Цена;
-            pr2.Срок =13.04;
-            double s2 = pr2.Срок;
+            pr2.Срок = new DateTime(2022, 09, 05);
+            DateTime s2 = pr2.Срок;
             pr2.Кол = 320;
             int k2 = pr2.Кол;
 
@@ -52,8 +52,8 @@ namespace LAB_3_Saveliy
             string p3 = pr3.Произв;
             pr3.Цена = 100;
             double z3 = pr3.Цена;
-            pr3.Срок =21.07;
-            double s3 = pr3.Срок;
+            pr3.Срок = new DateTime(2022, 02, 10);
+            DateTime s3 = pr3.Срок;
             pr3.Кол = 600;
             int k3 = pr3.Кол;
 
@@ -64,8 +64,8 @@ namespace LAB_3_Saveliy
             string p4 = pr4.Произв;
             pr4.Цена = 200;
             double z4 = pr4.Цена;
-            pr4.Срок =10.02;
-            double s4 = pr4.Срок;
+            pr4.Срок = new DateTime(2022, 07, 23);
+            DateTime s4 = pr4.Срок;
             pr4.Кол = 1540;
             int k4 = pr4.Кол;
 
@@ -76,11 +76,11 @@ namespace LAB_3_Saveliy
             string p5 = pr5.Произв;
             pr5.Цена = 80;
             double z5 = pr5.Цена;
-            pr5.Срок = 16.12;
-            double s5 = pr5.Срок;
+            pr5.Срок = new DateTime(2021, 12, 17);
+            DateTime s5 = pr5.Срок;
             pr5.Кол = 300;
             int k5 = pr5.Кол;
-
+            
             //	список товаров для заданного наименования
             Console.WriteLine("список товаров для заданного наименования");
             Console.WriteLine("Введите имя продукта:");
@@ -153,8 +153,9 @@ namespace LAB_3_Saveliy
             //список товаров, срок хранения которых больше заданного.
             Console.WriteLine("список товаров, срок хранения которых больше заданного");
             Console.WriteLine("Введите срок годности:");
-            double A3 = double.Parse(Console.ReadLine());
-
+              DateTime A3 = new DateTime();
+            A3 = DateTime.Parse(Console.ReadLine());
+            
             if (A3 < s1)
             {
                 Console.WriteLine($"\nПродукт-1\nИмя:{i1}\nПроизводитель:{p1}\nЦена:{z1}\nСрок годности:{s1}\nКоличество:{k1}");
