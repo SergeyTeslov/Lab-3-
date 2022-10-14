@@ -12,3 +12,17 @@ C:\Users\Савелий\OneDrive\Документы\GitHub\Lab-3-\LAB-3 Saveliy\
 C:\Users\Савелий\OneDrive\Документы\GitHub\Lab-3-\LAB-3 Saveliy\obj\Debug\netcoreapp3.1\LAB-3 Saveliy.dll
 C:\Users\Савелий\OneDrive\Документы\GitHub\Lab-3-\LAB-3 Saveliy\obj\Debug\netcoreapp3.1\LAB-3 Saveliy.pdb
 C:\Users\Савелий\OneDrive\Документы\GitHub\Lab-3-\LAB-3 Saveliy\obj\Debug\netcoreapp3.1\LAB-3 Saveliy.genruntimeconfig.cache
+C:\Users\korgi\Documents\GitHub\Lab-3-\LAB-3 Saveliy\bin\Debug\netcoreapp3.1\LAB-3 Saveliy.exe
+C:\Users\korgi\Documents\GitHub\Lab-3-\LAB-3 Saveliy\bin\Debug\netcoreapp3.1\LAB-3 Saveliy.deps.json
+C:\Users\korgi\Documents\GitHub\Lab-3-\LAB-3 Saveliy\bin\Debug\netcoreapp3.1\LAB-3 Saveliy.runtimeconfig.json
+C:\Users\korgi\Documents\GitHub\Lab-3-\LAB-3 Saveliy\bin\Debug\netcoreapp3.1\LAB-3 Saveliy.runtimeconfig.dev.json
+C:\Users\korgi\Documents\GitHub\Lab-3-\LAB-3 Saveliy\bin\Debug\netcoreapp3.1\LAB-3 Saveliy.dll
+C:\Users\korgi\Documents\GitHub\Lab-3-\LAB-3 Saveliy\bin\Debug\netcoreapp3.1\LAB-3 Saveliy.pdb
+C:\Users\korgi\Documents\GitHub\Lab-3-\LAB-3 Saveliy\obj\Debug\netcoreapp3.1\LAB-3 Saveliy.csproj.AssemblyReference.cache
+C:\Users\korgi\Documents\GitHub\Lab-3-\LAB-3 Saveliy\obj\Debug\netcoreapp3.1\LAB-3 Saveliy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\korgi\Documents\GitHub\Lab-3-\LAB-3 Saveliy\obj\Debug\netcoreapp3.1\LAB-3 Saveliy.AssemblyInfoInputs.cache
+C:\Users\korgi\Documents\GitHub\Lab-3-\LAB-3 Saveliy\obj\Debug\netcoreapp3.1\LAB-3 Saveliy.AssemblyInfo.cs
+C:\Users\korgi\Documents\GitHub\Lab-3-\LAB-3 Saveliy\obj\Debug\netcoreapp3.1\LAB-3 Saveliy.csproj.CoreCompileInputs.cache
+C:\Users\korgi\Documents\GitHub\Lab-3-\LAB-3 Saveliy\obj\Debug\netcoreapp3.1\LAB-3 Saveliy.dll
+C:\Users\korgi\Documents\GitHub\Lab-3-\LAB-3 Saveliy\obj\Debug\netcoreapp3.1\LAB-3 Saveliy.pdb
+C:\Users\korgi\Documents\GitHub\Lab-3-\LAB-3 Saveliy\obj\Debug\netcoreapp3.1\LAB-3 Saveliy.genruntimeconfig.cache
