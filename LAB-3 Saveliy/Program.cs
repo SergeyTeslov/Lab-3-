@@ -18,8 +18,20 @@ namespace LAB_3_Saveliy
 {
     class Program
     {
-        static void Main(string[] args)
-        {
+        public static Product[] myMassive = new Product[5];
+
+        private static void checkName(string A) {
+            for (uint i = 0; i < myMassive.Length; i++)
+            {
+                if (A == myMassive[i].Имя)
+                {
+                    Console.WriteLine($"\nПродукт-1\nИмя:{myMassive[i].Имя}\nПроизводитель:{myMassive[i].Произв}\n" +
+                        $"Цена:{myMassive[i].Цена}\nСрок годности:{myMassive[i].Срок}\nКоличество:{myMassive[i].Кол}");
+                }
+            }
+        }
+
+        private static void init() {
             Product pr1 = new Product();
             pr1.Имя = "паста арахисовая";
             string i1 = pr1.Имя;
@@ -27,7 +39,7 @@ namespace LAB_3_Saveliy
             string p1 = pr1.Произв;
             pr1.Цена = 400;
             double z1 = pr1.Цена;
-            pr1.Срок = new DateTime(2022,04,13);
+            pr1.Срок = new DateTime(2022, 04, 13);
             DateTime s1 = pr1.Срок;
             pr1.Кол = 250;
             int k1 = pr1.Кол;
@@ -80,32 +92,43 @@ namespace LAB_3_Saveliy
             DateTime s5 = pr5.Срок;
             pr5.Кол = 300;
             int k5 = pr5.Кол;
-            
+
+            myMassive[0] = pr1;
+            myMassive[1] = pr2;
+            myMassive[2] = pr3;
+            myMassive[3] = pr4;
+            myMassive[4] = pr5;
+        }
+        static uint Search(string searchName) {
+            for (uint i = 0; i < myMassive.Length;i++) {
+                if (searchName == myMassive[i].Имя)
+                {
+                    return i;
+                }                
+            }
+            return 0;
+        }
+        static void Main(string[] args)
+        {
+
+            init();
+
             //	список товаров для заданного наименования
             Console.WriteLine("список товаров для заданного наименования");
             Console.WriteLine("Введите имя продукта:");
             string A = Console.ReadLine();
-            
-            if (A == i1)
-            {
-                Console.WriteLine($"\nПродукт-1\nИмя:{i1}\nПроизводитель:{p1}\nЦена:{z1}\nСрок годности:{s1}\nКоличество:{k1}");
+
+
+            checkName(A);
+            /*
+            for (uint i = 0; i < myMassive.Length; i++) {
+                if (A == myMassive[i].Имя)
+                {
+                    Console.WriteLine($"\nПродукт-1\nИмя:{myMassive[i].Имя}\nПроизводитель:{myMassive[i].Произв}\n" +
+                        $"Цена:{myMassive[i].Цена}\nСрок годности:{myMassive[i].Срок}\nКоличество:{myMassive[i].Кол}");
+                }
             }
-            if (A == i2)
-            {
-                Console.WriteLine($"\nПродукт-2\nИмя:{i2}\nПроизводитель:{p2}\nЦена:{z2}\nСрок годности:{s2}\nКоличество:{k2}");
-            }
-            if (A == i3)
-            {
-                Console.WriteLine($"\nПродукт-3\nИмя:{i3}\nПроизводитель:{p3}\nЦена:{z3}\nСрок годности:{s3}\nКоличество:{k3}");
-            }
-            if (A == i4)
-            {
-                Console.WriteLine($"\nПродукт-4\nИмя:{i4}\nПроизводитель:{p4}\nЦена:{z4}\nСрок годности:{s4}\nКоличество:{k4}");
-            }
-            if (A == i5)
-            {
-                Console.WriteLine($"\nПродукт-5\nИмя:{i5}\nПроизводитель:{p5}\nЦена:{z5}\nСрок годности:{s5}\nКоличество:{k5}");
-            }
+           */
 
 
             //список товаров для заданного наименования, цена которых не превышает указанной
@@ -114,68 +137,28 @@ namespace LAB_3_Saveliy
             string A1 = Console.ReadLine();
             Console.WriteLine("Введите цену max:");
             double A2 = double.Parse(Console.ReadLine());
-            
-            if (A1 == i1)
+
+            for (uint i = 0; i < myMassive.Length; i++)
             {
-                if(A2 > z1)
+                if (A1 == myMassive[i].Имя && A2 > myMassive[i].Цена)
                 {
-                    Console.WriteLine($"\nПродукт-1\nИмя:{i1}\nПроизводитель:{p1}\nЦена:{z1}\nСрок годности:{s1}\nКоличество:{k1}");
+                    Console.WriteLine($"\nПродукт-1\nИмя:{myMassive[i].Имя}\nПроизводитель:{myMassive[i].Произв}\nЦена:{myMassive[i].Цена}" +
+                        $"\nСрок годности:{myMassive[i].Срок}\nКоличество:{myMassive[i].Кол}");
                 }
             }
-            if (A1 == i2)
-            {
-                if (A2 > z2)
-                {
-                    Console.WriteLine($"\nПродукт-2\nИмя:{i2}\nПроизводитель:{p2}\nЦена:{z2}\nСрок годности:{s2}\nКоличество:{k2}");
-                }
-            }
-            if (A1 == i3)
-            {
-                if (A2 > z3)
-                {
-                    Console.WriteLine($"\nПродукт-3\nИмя:{i3}\nПроизводитель:{p3}\nЦена:{z3}\nСрок годности:{s3}\nКоличество:{k3}");
-                }
-            }
-            if (A1 == i4)
-            {
-                if (A2 > z4)
-                {
-                    Console.WriteLine($"\nПродукт-4\nИмя:{i4}\nПроизводитель:{p4}\nЦена:{z4}\nСрок годности:{s4}\nКоличество:{k4}");
-                }
-            }
-            if (A1 == i5)
-            {
-                if (A2 > z5)
-                {
-                    Console.WriteLine($"\nПродукт-5\nИмя:{i5}\nПроизводитель:{p5}\nЦена:{z5}\nСрок годности:{s5}\nКоличество:{k5}");
-                }
-            }
+    
             //список товаров, срок хранения которых больше заданного.
             Console.WriteLine("список товаров, срок хранения которых больше заданного");
             Console.WriteLine("Введите срок годности:");
-              DateTime A3 = new DateTime();
+            DateTime A3 = new DateTime();
+
             A3 = DateTime.Parse(Console.ReadLine());
-            
+            /* переделать
             if (A3 < s1)
             {
                 Console.WriteLine($"\nПродукт-1\nИмя:{i1}\nПроизводитель:{p1}\nЦена:{z1}\nСрок годности:{s1}\nКоличество:{k1}");
-            }
-            if (A3 < s2)
-            {
-                Console.WriteLine($"\nПродукт-2\nИмя:{i2}\nПроизводитель:{p2}\nЦена:{z2}\nСрок годности:{s2}\nКоличество:{k2}");
-            }
-            if (A3 < s3)
-            {
-                Console.WriteLine($"\nПродукт-3\nИмя:{i3}\nПроизводитель:{p3}\nЦена:{z3}\nСрок годности:{s3}\nКоличество:{k3}");
-            }
-            if (A3 < s4)
-            {
-                Console.WriteLine($"\nПродукт-4\nИмя:{i4}\nПроизводитель:{p4}\nЦена:{z4}\nСрок годности:{s4}\nКоличество:{k4}");
-            }
-            if (A3 < s5)
-            {
-                Console.WriteLine($"\nПродукт-5\nИмя:{i5}\nПроизводитель:{p5}\nЦена:{z5}\nСрок годности:{s5}\nКоличество:{k5}");
-            }
+            }*/
+
         }
     }
 }
